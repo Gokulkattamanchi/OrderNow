@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Automatic">
+    <entity name="Orders" representedClassName=".Orders" syncable="YES">
+        <attribute name="orderId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="orderName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="productDetails" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductDetails" syncable="YES"/>
+    </entity>
+    <entity name="ProductDetails" representedClassName=".ProductDetails" syncable="YES">
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productBarcodeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Orders" positionX="297" positionY="-72" width="128" height="90"/>
+        <element name="ProductDetails" positionX="-63" positionY="-18" width="128" height="120"/>
+    </elements>
+</model>
